@@ -2,6 +2,7 @@
 @import url('./reset.css');
 @import url('./fonts.css');
 @import url('./variables.css');
+@import url('./global-custom-styles.css');
 
 /* Section's styles */
 @import url('./header.css');
