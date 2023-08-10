@@ -17,13 +17,3 @@ p:hover {
 .font-text-alt {
   font-family: var(--ff-global-font);
 }
-
-.btn {
-  padding: 17px 65px;
-  min-width: 224px;
-  background-color: var(--color-primary);
-}
-
-.btn:hover {
-  background-color: var(--color-effect);
-}
