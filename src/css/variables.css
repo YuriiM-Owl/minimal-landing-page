@@ -22,5 +22,5 @@
 
   /** -------------------- OTHER -------------------- */
 
-  --trn-main-transition-params: 340ms cubic-bezier(0.4, 0, 0.2, 1);
+  --trn-main-transition-params: 340ms cubic-bezier(0.39, 0.46, 0.02, 0.86);
 }

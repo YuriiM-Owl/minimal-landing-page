@@ -55,16 +55,37 @@ body {
 .btn {
   border: none;
   background-color: var(--color-primary);
+  background-color: red;
   color: var(--color-alt-text);
   font-size: 16px;
   line-height: 1.5;
   padding-left: 65px;
   padding-right: 65px;
-  transition: background-color var(--trn-main-transition-params);
+  transition: background-color var(--trn-main-transition-params),
+    transform var(--trn-main-transition-params);
 }
 
 .btn:is(:hover, :focus) {
   background-color: var(--color-effect);
+  transform: translateX(50px);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.scroll-lock {
+  overflow: hidden;
 }
 
 @media screen and (min-width: 375px) {
