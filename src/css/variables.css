@@ -8,8 +8,17 @@
 
   --color-primary: #0a224a;
   --color-effect: #061835;
+
   --color-main-bg: #fff;
-  --color-text-alt: #fff;
+  --color-alt-bg: #f7faff;
+
+  --color-calm-state: #b6b6b6;
+
+  --color-error: #e74a3b;
+
+  --color-alt-text: #fff;
+  --color-sub-text: #7a7a7a;
+  --color-supp-info: #d9d9d9;
 
   /** -------------------- OTHER -------------------- */
 

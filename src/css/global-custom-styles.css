@@ -55,7 +55,7 @@ body {
 .btn {
   border: none;
   background-color: var(--color-primary);
-  color: var(--color-text-alt);
+  color: var(--color-alt-text);
   font-size: 16px;
   line-height: 1.5;
   padding-left: 65px;
