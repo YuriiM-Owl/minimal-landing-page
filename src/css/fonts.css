@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/RobotoRegular.eot');
+  src: url('../fonts/RobotoRegular.eot') format('embedded-opentype'),
+    url('../fonts/RobotoRegular.woff2') format('woff2'),
+    url('../fonts/RobotoRegular.woff') format('woff'),
+    url('../fonts/RobotoRegular.ttf') format('truetype'),
+    url('../fonts/RobotoRegular.svg#RobotoRegular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/RobotoBold.eot');
+  src: url('../fonts/RobotoBold.eot') format('embedded-opentype'),
+    url('../fonts/RobotoBold.woff2') format('woff2'),
+    url('../fonts/RobotoBold.woff') format('woff'),
+    url('../fonts/RobotoBold.ttf') format('truetype'),
+    url('../fonts/RobotoBold.svg#RobotoBold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay';
+  src: url('../fonts/PlayfairDisplayRegular.eot');
+  src: url('../fonts/PlayfairDisplayRegular.eot') format('embedded-opentype'),
+    url('../fonts/PlayfairDisplayRegular.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplayRegular.woff') format('woff'),
+    url('../fonts/PlayfairDisplayRegular.ttf') format('truetype'),
+    url('../fonts/PlayfairDisplayRegular.svg#PlayfairDisplayRegular')
+      format('svg');
+  font-weight: 400;
+  font-style: normal;
+}

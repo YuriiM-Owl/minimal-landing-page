@@ -1,0 +1,29 @@
+p {
+  font-weight: 700;
+  margin: 20px 0 20px 20px;
+  color: red;
+}
+
+p:hover {
+  color: var(--color-effect);
+}
+
+.font-text {
+  font-family: var(--ff-main-title-font);
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.font-text-alt {
+  font-family: var(--ff-global-font);
+}
+
+.btn {
+  padding: 17px 65px;
+  min-width: 224px;
+  background-color: var(--color-primary);
+}
+
+.btn:hover {
+  background-color: var(--color-effect);
+}
