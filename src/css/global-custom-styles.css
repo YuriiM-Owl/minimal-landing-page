@@ -2,16 +2,17 @@ body {
   font-family: var(--ff-global-font);
   color: var(--color-primary);
   background-color: var(--color-main-bg);
-  line-height: 1.5;
 }
 
 .container {
   width: 100%;
   margin: 0 auto;
   padding: 0 16px;
+  /* TODO remove at the end of project */
   outline: 2px solid #b31212;
 }
 
+/* h1 */
 .main-title {
   font-family: var(--ff-main-title-font);
   font-size: 28px;
@@ -20,6 +21,11 @@ body {
   text-transform: uppercase;
 }
 
+/* .about-us .section-title {
+  margin-bottom: 24px;
+} */
+
+/* h2 */
 .section-title {
   font-size: 28px;
   font-weight: 400;
@@ -27,6 +33,7 @@ body {
   text-transform: uppercase;
 }
 
+/* h3 */
 .section-subtitle {
   font-size: 16px;
   font-weight: 400;
@@ -46,28 +53,30 @@ body {
   transform: translateY(-50%);
 }
 
+/* h4 */
 .local-title {
   font-size: 18px;
   line-height: 1.78;
   text-transform: uppercase;
 }
 
+.text {
+  line-height: 1.5;
+}
+
 .btn {
   border: none;
   background-color: var(--color-primary);
-  background-color: red;
   color: var(--color-alt-text);
   font-size: 16px;
   line-height: 1.5;
   padding-left: 65px;
   padding-right: 65px;
-  transition: background-color var(--trn-main-transition-params),
-    transform var(--trn-main-transition-params);
+  transition: background-color var(--trn-main-transition-params);
 }
 
 .btn:is(:hover, :focus) {
   background-color: var(--color-effect);
-  transform: translateX(50px);
 }
 
 .visually-hidden {
