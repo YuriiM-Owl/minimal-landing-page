@@ -160,10 +160,6 @@
     }
 }
 
-
-
-/* TODO Media */
-
 @media screen and (min-width: 1440px) {
     .newsletter .container{
         max-width: 1128px;
@@ -191,50 +187,3 @@
         }
     }
 }
-
-
-
-
-@media screen and (min-width: 1440px) {
-    
-}
-
-
-
-/* 
-@media (min-width: 769px) and (max-width: 1440px){
-    .newsletter .newsletter-img{
-        background-image: url('../images/subscription-desktop-1x.jpg');
-    }
-}
-
-@media (min-width:376px) and (max-width: 768px) {
-    .newsletter .newsletter-img{
-        background-image:  url('../images/subscription-tablet-1x.jpg');
-    }
-}
-
-@media (max-width: 375px) {
-    .newsletter .newsletter-img{
-        background-image:  url('../images/subscription-mobile-1x.jpg');
-    }
-}
-  
-
-@media (min-width: 769px) and (max-width: 1440px) and (min-resolution: 192dpi){
-    .newsletter .newsletter-img{
-        background-image:  url('../images/subscription-desktop-2x.jpg');
-    }
-}
-
-@media (min-width: 376px) and (max-width: 768px) and (min-resolution: 192dpi){
-    .newsletter .newsletter-img{
-        background-image:  url('../images/subscription-tablet-2x.jpg');
-    }
-}
-
-@media (max-width: 375px) and (min-resolution: 192dpi){
-    .newsletter .newsletter-img{
-        background-image:  url('../images/subscription-mobile-2x.jpg');
-    }
-} */
