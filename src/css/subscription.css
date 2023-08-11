@@ -10,11 +10,6 @@
     align-items: flex-end;
 }
 
-.newsletter .wrapper-item:nth-child(2){
-    width: 100%;
-    min-height: 300px;
-}
-
 .newsletter .newsletter-title{
     font-size: 32px;
     line-height: 1.4;
@@ -114,9 +109,6 @@
 }
 
 
-
-
-
 /* TODO Submit btn */
 
 .newsletter .form .submit-btn{
@@ -129,6 +121,11 @@
 }
 
 /* TODO images */
+
+.newsletter .wrapper-item:nth-child(2){
+    width: 100%;
+    min-height: 300px;
+}
 
 .newsletter .newsletter-img{
     width: 100%;
