@@ -1,6 +1,6 @@
 .newsletter{
-    padding-top: 100px;
-    padding-bottom: 86px;
+    padding-top: 64px;
+    padding-bottom: 64px;
 }
 
 .newsletter .wrapper{
@@ -11,15 +11,16 @@
 }
 
 .newsletter .newsletter-title{
-    font-size: 32px;
-    line-height: 1.4;
+    font-size: 28px;
+    line-height: 1.5;
+    text-align: center;
     text-transform: uppercase;
     color: var(--color-primary);
     margin-bottom: 31.06px;
 }
 
 .newsletter .newsletter-text{
-    font-size: 18px;
+    font-size: 16px;
     color: var(--color-primary);
 }
 
@@ -41,12 +42,14 @@
     border: 1px solid var(--color-calm-state);
     transition: border-color var(--trn-main-transition-params);
     color: var(--color-primary);
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .newsletter .form .input-container .form-input:invalid:not(:placeholder-shown) {
-    border: 1px solid red;
+    border: 1px solid var(--color-error-state);
     outline: transparent;
-    color: red;
+    color: var(--color-error-state);
 }
 
 .newsletter .form .input-container{
@@ -59,7 +62,7 @@
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
-    fill: red;
+    fill: var(--color-error-state);
 }
   
 .form-input:invalid:not(:placeholder-shown) + .attention-icon {
@@ -80,23 +83,30 @@
 
 .newsletter .form .checkbox-container {
     display: flex;
-    align-items: center;
 }
 
 .newsletter .form .checkbox-container label {
     display: flex;
-    align-items: center; 
     gap: 8px;
+    padding-top: 5px;
+
+    font-size: 16px;
+    color: var(--color-calm-state);
 }
 
 .newsletter .form .checkbox-border {
+    flex-shrink: 0;
     width: 25px;
     height: 25px;
     border: 1px solid var(--color-calm-state);
     display: flex;
     align-items: center;
     justify-content: center; 
+    position: relative;
+    top: -4px;
 }
+
+
 
 .newsletter .form .checkbox-icon {
     display: none;
@@ -108,16 +118,21 @@
     display: inline-block;
 }
 
+.newsletter .form .form-checkbox:focus + label .checkbox-border {
+    border-color: var(--color-primary);
+}
+
 
 /* TODO Submit btn */
 
 .newsletter .form .submit-btn{
     min-width: 224px;
-    height: 50;
-    margin-top: 31.06px;
-    padding: 17px 65px;
+    height: 50px;
+    margin-top: 32px;
+    padding: 0 65px;
 
-    line-height: 1.3;
+    font-size: 16px;
+    /* line-height: 1.3; */
 }
 
 /* TODO images */
@@ -155,9 +170,48 @@
             background-image: url('../images/subscription-tablet-2x.jpg');
         }
     }
+
+    .newsletter{
+        padding-top: 100px;
+    }
+
+    .newsletter .wrapper{
+        gap: 64px;
+    }
+
+    .newsletter .newsletter-title{
+        font-size: 32px;
+        line-height: 1.4;
+        text-align: left;
+    }
+
+    .newsletter .newsletter-text{
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+    .newsletter .form .input-container .form-input,
+    .newsletter .form .checkbox-container label{
+        font-size: 18px;
+    }
+
+
+
+    .newsletter .form .submit-btn{
+        font-size: 18px;
+    }
+
+    .wrapper-item:nth-child(1){
+        max-width: 536px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
+
+    .newsletter{
+        padding-bottom: 86px;
+    }
+
     .newsletter .container{
         max-width: 1128px;
     }
