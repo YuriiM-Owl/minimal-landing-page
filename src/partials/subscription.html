@@ -1,11 +1,10 @@
 
 <section class="newsletter">
     <div class="container">
-        <div class="countainer-item">
+        <div class="container-item-content">
             <h3 class="section-title">
                 Newsletter  
             </h3>
-
             <p class="newsletter-text text">
                 Every week we will send you new designs and information about sales.
             </p>
@@ -45,8 +44,30 @@
             </form>
         </div>
 
-        <div class="countainer-item">
-            <div class="newsletter-img"></div>
+        <div class="container-item-picture">
+            <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    ./images/subscription-desktop-1x.jpg 1x,
+                    ./images/subscription-desktop-2x.jpg 2x
+                  "
+                />
+                <source 
+                   media="(min-width: 768px)" 
+                   srcset="
+                    ./images/subscription-tablet-1x.jpg 1x,
+                    ./images/subscription-tablet-2x.jpg 2x"
+                />
+                <source 
+                   media="(min-width: 320px)" 
+                   srcset="
+                    ./images/subscription-mobile-1x.jpg 1x,
+                    ./images/subscription-mobile-2x.jpg 2x,
+                    "
+                />
+                <img src="./images/subscription-tablet-1x.jpg" alt="" width="704" />
+              </picture>
         </div>
     </div>
             
