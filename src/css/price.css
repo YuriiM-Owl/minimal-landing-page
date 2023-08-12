@@ -2,16 +2,16 @@
     padding: 64px 0;
 }
 
-.price-conteiner {
+/* .price-conteiner {
     display: flex;
     max-width: 100%;
-}
+} */
 
-.price-menu {
+.price-list {
     width: 343px;
 }
 
-.price-list {
+.price-iteam {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,34 +20,45 @@
     padding: 30px 0;
 }
 
-.title-chairs {
+.price-iteam:first-child {
     border-top: 1px solid var(--color-primary);
 }
 
 /* //TODO rewrite later correct address*/
 
-.price-text {
+.price > .text {
     font-size: 16px;
     font-weight: 700;
+}
+
+.price-title {
+    position: relative;
 }
 
 .price-title:hover {
     position: relative;
     padding-left: 80px;
-    transition: 540ms cubic-bezier(0.39, 0.46, 0.02, 0.86);
+    transition: ease-in-out 0.5s;
+    transition-delay: 0.5s;
 }
 
-.price-title:hover::before {
-    display: flex;
+.price-title::before {
     position: absolute;
     content: "";
     width: 50px;
     height: 4px;
     border-radius: 3px;
     background-color: var(--color-primary);
-    top: 50%;
-    left: 0;
-    transition: 1000ms ease-in-out;
+    opacity: 0;
+    transform: translate(20px, 20px);
+    transition: opacity ease-in-out 0.002s;
+    transition-delay: 0;
+}
+
+.price-title:hover::before {
+    opacity: 1;
+    transform: translate(-70px, 20px);
+    transition-delay: 900ms;
 }
 
 @media screen and (min-width: 768px) {
@@ -55,22 +66,21 @@
         padding: 100px 0;
     }
 
-    .price-conteiner {
+    .price > .conteiner {
         padding: 0 32px;
-        margin: 0 auto;
     }
 
-    .price-menu {
+    .price-list {
         width: 704px;
     }
 }
 
 @media screen and (min-width: 1440px) {
-    .price-conteiner {
+    .price > .conteiner {
         padding: 0 172px;
     }
 
-    .price-menu {
+    .price-list {
         width: 1096px;
     }
   }
