@@ -89,8 +89,7 @@
 .checkbox-container label {
     display: flex;
     gap: 8px;
-    padding-top: 5px;
-
+    
     font-size: 16px;
     color: var(--color-calm-state);
 }
@@ -151,12 +150,13 @@
         padding-bottom: 100px;
     }
 
-    .newsletter .countainer{
+    .newsletter .container{
         gap: 64px;
     }
 
     .section-title{
         text-align: left;
+        margin-bottom: 30px;
     }
 
     .newsletter-text{
@@ -189,6 +189,10 @@
         max-width: 1128px;
         flex-wrap: nowrap;
         gap: 100px;
+    }
+
+    .section-title{
+        margin-bottom: 31px;
     }
 
     .container-item-picture{
