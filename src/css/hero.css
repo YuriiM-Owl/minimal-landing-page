@@ -1,0 +1,215 @@
+.hero {
+}
+
+/* .container-hero {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  padding: 0 16px;
+  height: 717px;
+  background: var(--color-main-bg, --color-alt-bg),
+    url(../images/hero-bg-main-mobile-1x.jpg) no-repeat;
+  /* margin: 0 auto; */
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .container-hero {
+    background: var(--color-main-bg, --color-alt-bg),
+      url(../images/hero-bg-main-mobile-2x.jpg) no-repeat;
+  }
+} */
+
+.hero-bg-wraper {
+}
+
+.hero .main-title {
+  color: var(--color-primary);
+}
+
+.hero-content-wraper {
+}
+
+.hero .text {
+}
+
+.hero-item-text {
+}
+
+.btn-hero {
+}
+
+@media screen and (min-width: 375px) {
+  /* .hero {
+    margin: 0 auto;
+  } */
+  .container-hero {
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+    padding: 0 16px;
+    height: 717px;
+    background: var(--color-main-bg, --color-alt-bg),
+      url(../images/hero-bg-main-mobile-1x.jpg) no-repeat;
+    /* margin: 0 auto; */
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .container-hero {
+      background: var(--color-main-bg, --color-alt-bg),
+        url(../images/hero-bg-main-mobile-2x.jpg) no-repeat;
+    }
+  }
+
+  .hero-bg-wraper {
+    width: 285px;
+    height: 126px;
+    margin-top: 140px;
+    margin-bottom: 14px;
+  }
+
+  /* .main-title {
+    
+  } */
+
+  .hero-content-wraper {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .hero .text {
+    color: var(--color-primary);
+    font-family: var(--ff-global-font);
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .hero-item-text {
+    width: 343px;
+    height: 48px;
+  }
+
+  .btn-hero {
+    width: 224px;
+    padding: 12px 76.5px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* .hero {
+    
+  } */
+
+  .container-hero {
+    max-width: 768px;
+    flex-direction: column;
+    padding: 0 32px;
+    margin-top: 64px;
+    margin-bottom: 100px;
+    height: auto;
+    background: var(--color-main-bg, --color-alt-bg);
+  }
+
+  .hero-bg-wraper {
+    width: 704px;
+    height: 528px;
+    margin-top: 0;
+    margin-bottom: 32px;
+    background: url(../images/hero-bg-secondary-1-tablet-1x.jpg) no-repeat left
+        bottom,
+      url(../images/hero-bg-main-tablet-1x.jpg) no-repeat right;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-bg-wraper {
+      background: url(../images/hero-bg-secondary-1-tablet-2x.jpg) no-repeat
+          left bottom,
+        url(../images/hero-bg-main-tablet-2x.jpg) no-repeat right bottom;
+    }
+  }
+
+  .hero .main-title {
+    font-size: 50px;
+  }
+
+  .hero-content-wraper {
+    gap: 30px;
+  }
+
+  .hero .text {
+    font-size: 18px;
+  }
+
+  .btn-hero {
+    width: 224px;
+    padding: 13px 72px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* .hero .container {
+    padding: 64px 60px 100px;
+  } */
+
+  .container-hero {
+    max-width: 1440px;
+
+    display: flex;
+    flex-direction: row;
+    height: 530px;
+    padding: 0 60px;
+    gap: 25px;
+  }
+
+  .hero-bg-wraper {
+    width: 983px;
+    height: 530px;
+    background: url(../images/hero-bg-secondary-1-desktop-1x.jpg) no-repeat left
+        bottom,
+      url(../images/hero-bg-main-desktop-1x.jpg) no-repeat right;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-bg-wraper {
+      background: url(../images/hero-bg-secondary-1-desktop-2x.jpg) no-repeat
+          left bottom,
+        url(../images/hero-bg-main-desktop-2x.jpg) no-repeat right bottom;
+    }
+  }
+
+  .hero .main-title {
+    width: 648px;
+    height: 150px;
+  }
+
+  .hero-content-wraper {
+    /* display: flex;
+    flex-direction: column; */
+    gap: 82px;
+    width: 312px;
+    height: 530px;
+    background: url(../images/hero-bg-secondary-2-desktop-1x.jpg) no-repeat top;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-bg-wraper {
+      background: url(../images/hero-bg-secondary-2-desktop-2x.jpg) no-repeat
+        top;
+    }
+  }
+
+  .hero-item-text {
+    padding-top: 398px;
+    /* margin-bottom: 30px; */
+  }
+}
