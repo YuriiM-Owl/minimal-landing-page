@@ -1,0 +1,163 @@
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* z-index: 10; */
+
+}
+
+
+.header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-alt-bg);
+    z-index: 4;
+}
+
+.header .container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    /* z-index: 4; */
+}
+
+.logo-header{
+    z-index: 4;
+}
+
+.nav-list{
+    display: none;
+}
+
+.burger{
+    width: 32px;
+    height: 32px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    z-index: 4;
+}
+
+.burger-line{
+    display: block;
+    position: absolute;
+    background-color: var(--color-primary);
+    width: 100%;
+    height: 3px;
+    border-radius: 2px;
+    left: 0;
+    transition: .3s all linear;
+} 
+
+ .first-line{ 
+    top: 0;
+ } 
+
+.second-line{
+    top: 25%;
+}
+
+.third-line{
+    top: 50%;
+}
+
+.fourth-line{
+    top: 75%;
+} 
+
+
+.burger-active .first-line,
+.burger-active .fourth-line{
+    opacity: 0;
+}
+
+.burger-active .second-line{
+    transform: rotate(45deg);
+}
+ .burger-active .third-line{
+    transform: rotate(-45deg);
+ }
+
+
+/* .menu-close-btn{
+    z-index: 6;
+} */
+
+.mob-menu{
+    position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        padding: 32px;
+        background-color: var(--color-main-bg);
+        z-index: 2;
+
+        transform: translateX(-100%);
+            transition: transform 250ms ease-in-out;
+}
+
+.mob-menu.is-open{
+    transform: translateX(0);
+}
+
+.mob-menu-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    margin-top: 144px;
+}
+
+.mob-menu-item{
+    font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .menu-open-btn{
+        width: 40px;
+        height: 40px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .header .container{
+        padding: 26px 0;
+        background-color: var(--color-alt-bg);
+        display: flex;
+        z-index: 5;
+        
+
+    }
+
+    .logo-header{
+        /* margin-right: 572px; */
+    }
+
+   
+
+    .nav-list{
+        display: flex;
+        gap: 30px;
+       
+    }
+
+    .burger{
+        display: none;
+    }
+
+    .mob-menu-list{
+        display: none;
+    }
+}
