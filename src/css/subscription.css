@@ -23,7 +23,7 @@
 /* TODO form-container */
 
 .form{
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .group-container-inputs{
@@ -36,14 +36,19 @@
 /* TODO inputs */
 .form-input{
     width: 100%;
-    padding: 11px 20px;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
     border: 1px solid var(--color-calm-state);
-    transition: border-color var(--trn-main-transition-params);
     color: var(--color-primary);
     font-size: 16px;
     line-height: 1.5;
     padding-right: 64px;
     transition: border var(--trn-main-transition-params);
+}
+
+.form-input::placeholder{
+    color: var(--color-calm-state);
 }
 
 .form-input:invalid:not(:placeholder-shown) {
@@ -70,8 +75,7 @@
 }
 
 .form-input:hover,
-.form-input:focus,
-.form-input:invalid{
+.form-input:focus{
     border-color: var(--color-primary);
 }
 
@@ -86,10 +90,11 @@
     display: flex;
 }
 
-.checkbox-container label {
+.checkbox-container .form-label {
     display: flex;
+    align-content: flex-start;
     gap: 8px;
-    
+
     font-size: 16px;
     color: var(--color-calm-state);
 }
@@ -103,7 +108,6 @@
     align-items: center;
     justify-content: center; 
     position: relative;
-    top: -4px;
     transition: background-color var(--trn-main-transition-params),
     border var(--trn-main-transition-params);
 }
@@ -164,6 +168,10 @@
         line-height: 1.7;
     }
 
+    .form{
+        margin-top: 20px;
+    }
+
     .form-input,
     .checkbox-container label{
         font-size: 18px;
@@ -196,7 +204,15 @@
     }
 
     .container-item-picture{
-        width: 483px;
+        width: 460px;
+    }
+
+    .form{
+        margin-top: 21px;
+    }
+
+    .form-input{
+        height: 52px;
     }
 
     .submit-btn{

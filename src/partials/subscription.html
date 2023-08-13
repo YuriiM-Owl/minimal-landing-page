@@ -2,9 +2,9 @@
 <section class="newsletter">
     <div class="container">
         <div class="container-item-content">
-            <h3 class="section-title">
+            <h2 class="section-title">
                 Newsletter  
-            </h3>
+            </h2>
             <p class="newsletter-text text">
                 Every week we will send you new designs and information about sales.
             </p>
@@ -12,30 +12,37 @@
             <form action="" class="form">
                 <div class="group-container-inputs">
                     <div class="input-container">
-                        <input type="text" name="user-name" class="form-input" placeholder="Name"
-                        pattern="[A-Za-zА-Яа-яЁёЇїІіЄєҐґ]{2,16}" title="2 to 16 characters required"
-                        required>
-                        <svg width="24" height="24" class="attention-icon">
-                            <use href="../images/sprite.svg#attention-icon"></use>
-                        </svg>
+                        <label aria-label="user name input field" for="user-name" class="form-label">
+                            <input type="text" name="user-name" class="form-input" placeholder="Name"
+                            pattern="[A-Za-zА-Яа-яЁёЇїІіЄєҐґ]{2,16}" title="2 to 16 characters required"
+                            required>
+                            <svg width="24" height="24" class="attention-icon">
+                                <use href="./images/sprite.svg#attention-icon"></use>
+                            </svg>
+                        </label>
+                        
                     </div>
 
                     <div class="input-container">
-                        <input required type="email" name="email" class="form-input" placeholder="E-mail">
-                        <svg width="24" height="24" class="attention-icon">
-                            <use href="../images/sprite.svg#attention-icon"></use>
-                        </svg>
+                        <label aria-label="email input field" for="email" class="form-label">
+                            <input required type="email" name="email" class="form-input" placeholder="E-mail">
+                            <svg width="24" height="24" class="attention-icon">
+                                <use href="./images/sprite.svg#attention-icon"></use>
+                            </svg>
+                        </label>  
                     </div>
 
                     <div class="checkbox-container">
                         <input type="checkbox" name="user-agreed" id="user-agreed" class="form-checkbox visually-hidden">
-                        <label for="user-agreed">
+                        <label for="user-agreed" class="form-label">
                             <span class="checkbox-border">
                                 <svg class="checkbox-icon" width="13" height="13">
-                                    <use href="../images/sprite.svg#checkmark-icon"></use>
+                                    <use href="./images/sprite.svg#checkmark-icon"></use>
                                 </svg>
                             </span>
-                            Agree to subscribe to the newsletter
+                            <span class="text">
+                                Agree to subscribe to the newsletter
+                            </span>
                         </label>
                     </div>
                 </div>
