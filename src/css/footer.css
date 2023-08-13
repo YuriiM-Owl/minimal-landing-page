@@ -1,6 +1,7 @@
 .footer {
   background-color: var(--color-primary);
   padding-bottom: 16px;
+  padding-top: 36px;
 }
 
 .footer-logo-link {
@@ -14,10 +15,8 @@
 
 .footer-wrap {
   display: flex;
-  padding-top: 36px;
   justify-content: space-between;
   flex-wrap: wrap;
-  min-width: 343px;
 }
 
 .footer-socials {
@@ -26,6 +25,14 @@
   right: 16px;
   top: 36px;
   height: 28px;
+}
+
+.footer-socials-link {
+  display: block;
+  background-color: transparent;
+  width: 16px;
+  height: 16px;
+  border-radius: 35%;
 }
 
 .footer-socials-icon {
@@ -87,15 +94,19 @@
   font-weight: 400;
   line-height: 1.16;
   letter-spacing: 0.1em;
-  opacity: 0.6;
-  padding-bottom: 16px;
 }
 
 .footer-terms-link {
   text-decoration: underline;
+  opacity: 0.6;
 }
 
 @media screen and (min-width: 768px) {
+  .footer {
+    padding-bottom: 36px;
+    padding-top: 48px;
+  }
+
   .footer-nav {
     order: 2;
     width: 120px;
@@ -112,6 +123,12 @@
   .footer-socials {
     order: 3;
     gap: 16px;
+    height: 40px;
+  }
+
+  .footer-socials-link {
+    width: 40px;
+    height: 40px;
   }
 
   .footer-socials-icon {
@@ -138,7 +155,6 @@
   }
   .footer-wrap {
     position: relative;
-    padding-top: 48px;
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -148,7 +164,6 @@
   }
 
   .footer-terms {
-    padding-bottom: 36px;
     font-size: 16px;
     line-height: 1.25;
   }
@@ -207,5 +222,47 @@
 
   .footer-address {
     width: 248px;
+  }
+
+  .footer-logo-link:hover::after,
+  .footer-logo-link:focus::after {
+    display: block;
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: var(--color-main-bg);
+  }
+
+  .footer-socials-link:hover,
+  .footer-socials-link:focus {
+    background-color: brown;
+  }
+
+  /*  .footer-socials-link .footer-socials-icon:hover,
+  .footer-socials-link .footer-socials-icon:focus {
+    fill: var(--color-primary);
+  } */
+
+  .footer-nav-item:hover,
+  .footer-nav-item:focus {
+    text-decoration: underline;
+  }
+  .footer-terms-link:hover,
+  .footer-terms-link:focus {
+    opacity: 1;
+  }
+  .address:hover,
+  .address:focus {
+    text-decoration: underline;
+  }
+
+  .phone:hover,
+  .phone:focus {
+    text-decoration: underline;
+  }
+
+  .email:hover,
+  .email:focus {
+    text-decoration: underline;
   }
 }
