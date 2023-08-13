@@ -4,7 +4,7 @@
 }
 
 .about-us-text {
-  padding: 64px 0 34px 0;
+  padding: 64px 0 64px 0;
 }
 
 .section-subtitle {
@@ -18,8 +18,12 @@
   font-weight: 400;
 } */
 
-.about-us-text .text {
+/* .about-us-text .text {
   padding-bottom: 30px;
+} */
+
+.gap {
+  margin-bottom: 30px;
 }
 
 .container-text {
@@ -30,6 +34,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 30px;
+}
+
+.box-text {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 .text-list .text {
@@ -43,6 +54,7 @@
   line-height: 1.5;
   padding-bottom: 14px;
   text-align: center;
+  padding: 0;
 }
 
 .about-us-img {
@@ -62,21 +74,22 @@
 
   .about-us-text {
     background-color: var(--color-alt-bg);
-    padding: 36px 64px 0 64px;
+    padding: 36px 64px;
     margin-bottom: 30px;
   }
 
   .text-list {
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
-    gap: 33px;
+    /* gap: 33px; */
     justify-content: space-between;
     width: 100%;
   }
 
   .box-text {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+    gap: 14px;
   }
 }
 
@@ -84,7 +97,7 @@
   .about-us .container {
     display: flex;
     gap: 24px;
-    padding: 0 60px;
+    /* padding: 0 60px; */
   }
 
   /* .text {
@@ -92,13 +105,23 @@
   } */
 
   .about-us-text {
-    padding: 36px 69px 7px 69px;
+    padding: 36px 69px 37px 69px;
     min-width: 760px;
-    margin: 12px 0;
+    margin: 0;
+  }
+
+  .container-about-us-text {
+    /* padding: 21px 0 21px 0; */
+    display: flex;
+    align-items: center;
+  }
+
+  .box-text {
+    gap: 20px;
   }
 
   .text-accent {
-    padding-bottom: 22px;
+    padding: 0;
   }
 
   .text-list {
