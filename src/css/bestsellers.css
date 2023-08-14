@@ -8,15 +8,13 @@
 .bestsellers-item-display-none {
   display: none;
 }
-.bestsellers-card-title {
-  font-weight: 400px;
-}
+
 @media screen and (max-width: 767px) {
   .bestsellers-item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
-.bestsellers-img {
+.bestsellers-img-wrapper {
   margin-bottom: 14px;
 }
 .bestsellers-card-title {
@@ -39,6 +37,9 @@
   .bestsellers-price {
     font-size: inherit;
   }
+  .bestsellers-img-wrapper {
+    margin-bottom: 15px;
+  }
   .bestsellers-list {
     display: flex;
     flex-wrap: wrap;
@@ -60,14 +61,11 @@
     row-gap: 0;
     column-gap: 0;
   }
-  .bestsellers-img {
-    margin-bottom: 15px;
-  }
 
   .bestsellers-item {
     margin: 0;
   }
-  .bestsellers-item:nth-child(1) {
+  .bestsellers-item:first-child {
     margin-right: 24px;
   }
 
