@@ -62,6 +62,7 @@ body {
 .local-title-alt {
   font-weight: 400;
   line-height: 1.5;
+  font-size: 16px;
 }
 
 .text {
@@ -128,6 +129,9 @@ body {
   .local-title {
     font-size: 20px;
     line-height: 2.25;
+  }
+  .local-title-alt {
+    font-size: 18px;
   }
 
   .btn {
