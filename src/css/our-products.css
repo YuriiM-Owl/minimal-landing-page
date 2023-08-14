@@ -17,6 +17,7 @@
 
 .our-products-image .local-title-alt {
   margin-top: 16px;
+  font-size: 16px;
 }
 
 @media (max-width: 767px) {
@@ -42,6 +43,7 @@
 
   .our-products-image .local-title-alt {
     margin-top: 15px;
+    font-size: 18px;
   }
 
   .our-products-image-wrap {
