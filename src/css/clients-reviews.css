@@ -1,0 +1,70 @@
+.clients-reviews {
+  background-color: var(--color-alt-bg);
+}
+
+.section-title.clients-reviews-title {
+  text-align: center;
+}
+.clients-reviews-wrap {
+  display: flex;
+  background-color: var(--color-main-bg);
+  border-radius: 8px;
+  align-items: center;
+}
+.clients-reviews-item {
+  padding: 24px;
+  width: 343px;
+}
+
+.clients-reviews-item-header {
+  display: flex;
+  gap: 14px;
+}
+.clients-reviews-item-text {
+  font-size: 14px;
+  line-height: 1.43;
+  margin-top: 24px;
+}
+
+.client-name {
+  font-weight: 700;
+}
+
+.review-age {
+  font-size: 14px;
+  line-height: 1.29;
+}
+@media screen and (min-width: 375px) {
+}
+
+@media screen and (min-width: 768px) {
+  .clients-reviews-wrap {
+    gap: 16px;
+  }
+
+  .clients-reviews-item {
+    flex-basis: calc((100%-16px) / 2);
+  }
+}
+
+@media (max-width: 767px) {
+  .clients-reviews-wrap > :not(:first-child) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .clients-reviews-wrap > :nth-child(n + 3) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .clients-reviews-wrap {
+    gap: 24px;
+  }
+
+  .clients-reviews-item {
+    flex-basis: calc((100%-48px) / 3);
+  }
+}
