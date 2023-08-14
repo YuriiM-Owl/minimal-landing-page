@@ -1,26 +1,6 @@
 .hero {
 }
 
-/* .container-hero {
-  display: flex;
-  flex-direction: column;
-  max-width: 320px;
-  padding: 0 16px;
-  height: 717px;
-  background: var(--color-main-bg, --color-alt-bg),
-    url(../images/hero-bg-main-mobile-1x.jpg) no-repeat;
-  /* margin: 0 auto; */
-}
-
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .container-hero {
-    background: var(--color-main-bg, --color-alt-bg),
-      url(../images/hero-bg-main-mobile-2x.jpg) no-repeat;
-  }
-} */
-
 .hero-bg-wraper {
 }
 
@@ -41,26 +21,20 @@
 }
 
 @media screen and (min-width: 375px) {
-  /* .hero {
-    margin: 0 auto;
-  } */
   .container-hero {
     display: flex;
     flex-direction: column;
     max-width: 375px;
     padding: 0 16px;
     height: 717px;
-    background: var(--color-main-bg, --color-alt-bg),
-      url(../images/hero-bg-main-mobile-1x.jpg) no-repeat;
-    /* margin: 0 auto; */
+    background: url(../images/hero-bg-main-mobile-1x.jpg) no-repeat;
   }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .container-hero {
-      background: var(--color-main-bg, --color-alt-bg),
-        url(../images/hero-bg-main-mobile-2x.jpg) no-repeat;
+      background: url(../images/hero-bg-main-mobile-2x.jpg) no-repeat;
     }
   }
 
@@ -70,10 +44,6 @@
     margin-top: 140px;
     margin-bottom: 14px;
   }
-
-  /* .main-title {
-    
-  } */
 
   .hero-content-wraper {
     display: flex;
@@ -100,16 +70,10 @@
 }
 
 @media screen and (min-width: 768px) {
-  /* .hero {
-    
-  } */
-
   .container-hero {
     max-width: 768px;
     flex-direction: column;
     padding: 0 32px;
-    margin-top: 64px;
-    margin-bottom: 100px;
     height: auto;
     background: var(--color-main-bg, --color-alt-bg);
   }
@@ -153,13 +117,8 @@
 }
 
 @media screen and (min-width: 1440px) {
-  /* .hero .container {
-    padding: 64px 60px 100px;
-  } */
-
   .container-hero {
     max-width: 1440px;
-
     display: flex;
     flex-direction: row;
     height: 530px;
@@ -191,8 +150,6 @@
   }
 
   .hero-content-wraper {
-    /* display: flex;
-    flex-direction: column; */
     gap: 82px;
     width: 312px;
     height: 530px;
@@ -210,6 +167,5 @@
 
   .hero-item-text {
     padding-top: 398px;
-    /* margin-bottom: 30px; */
   }
 }
