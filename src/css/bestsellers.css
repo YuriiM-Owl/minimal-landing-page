@@ -3,7 +3,7 @@
   margin-bottom: 21px;
 }
 .bestsellers-section {
-  padding: 80px 0;
+  padding: 64px 0;
 }
 .bestsellers-item-display-none {
   display: none;
@@ -26,6 +26,9 @@
   font-weight: 700;
 }
 @media screen and (min-width: 768px) {
+  .bestsellers-section {
+    padding: 100px 0;
+  }
   .bestsellers-item-display-none {
     display: block;
   }
