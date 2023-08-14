@@ -1,222 +1,218 @@
-.newsletter{
-    padding-top: 64px;
-    padding-bottom: 64px;
+.newsletter {
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
-.newsletter > .container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    align-items: flex-end;
+.newsletter > .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-end;
 }
 
-.section-title{
-    text-align: center;
-    margin-bottom: 20px;
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.newsletter-text{
-    font-size: 16px;
-    color: var(--color-primary);
+.newsletter-text {
+  font-size: 16px;
+  color: var(--color-primary);
 }
 
 /* TODO form-container */
 
-.form{
-    margin-top: 30px;
+.form {
+  margin-top: 30px;
 }
 
-.group-container-inputs{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.group-container-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-
 
 /* TODO inputs */
-.form-input{
-    width: 100%;
-    height: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border: 1px solid var(--color-calm-state);
-    color: var(--color-primary);
-    font-size: 16px;
-    line-height: 1.5;
-    padding-right: 64px;
-    transition: border var(--trn-main-transition-params);
+.form-input {
+  width: 100%;
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid var(--color-calm-state);
+  color: var(--color-primary);
+  font-size: 16px;
+  line-height: 1.5;
+  padding-right: 64px;
+  transition: border var(--trn-main-transition-params);
 }
 
-.form-input::placeholder{
-    color: var(--color-calm-state);
+.form-input::placeholder {
+  color: var(--color-calm-state);
 }
 
 .form-input:invalid:not(:placeholder-shown) {
-    border: 1px solid var(--color-error-state);
-    color: var(--color-error-state);
-    padding-right: 64px;
+  border: 1px solid var(--color-error-state);
+  color: var(--color-error-state);
+  padding-right: 64px;
 }
 
-.input-container{
-    position: relative;
+.input-container {
+  position: relative;
 }
 
 .attention-icon {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    fill: transparent;
-    transition: fill var(--trn-main-transition-params);
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  fill: transparent;
+  transition: fill var(--trn-main-transition-params);
 }
-  
+
 .form-input:invalid:not(:placeholder-shown) + .attention-icon {
-    fill: var(--color-error-state);
+  fill: var(--color-error-state);
 }
 
 .form-input:hover,
-.form-input:focus{
-    border-color: var(--color-primary);
+.form-input:focus {
+  border-color: var(--color-primary);
 }
 
 .form-input:hover::placeholder,
-.form-input:focus::placeholder{
-    color: var(--color-primary);
+.form-input:focus::placeholder {
+  color: var(--color-primary);
 }
 
 /* TODO checkbox */
 
 .checkbox-container {
-    display: flex;
+  display: flex;
 }
 
 .checkbox-container .form-label {
-    display: flex;
-    align-content: flex-start;
-    gap: 8px;
-
-    font-size: 16px;
-    color: var(--color-calm-state);
+  display: flex;
+  align-content: flex-start;
+  gap: 8px;
+  /* font-size: 16px; */
+  color: var(--color-calm-state);
 }
 
 .checkbox-border {
-    flex-shrink: 0;
-    width: 25px;
-    height: 25px;
-    border: 1px solid var(--color-calm-state);
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    position: relative;
-    transition: background-color var(--trn-main-transition-params),
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--color-calm-state);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: background-color var(--trn-main-transition-params),
     border var(--trn-main-transition-params);
 }
 
-
-
 .checkbox-icon {
-    fill: transparent;
+  fill: transparent;
 }
 
 .form-checkbox:focus + label .checkbox-border {
-    border-color: var(--color-primary);
+  border-color: var(--color-primary);
 }
-
 
 /* TODO checkbox is checked */
 .form-checkbox:checked + label .checkbox-icon {
-    fill: var(--color-main-bg);
+  fill: var(--color-main-bg);
 }
 
 .form-checkbox:checked + label .checkbox-border {
-    background-color: var(--color-primary);
-    border: none;
+  background-color: var(--color-primary);
+  border: none;
 }
 
 /* TODO Submit btn */
-.submit-btn{
-    min-width: 224px;
-    height: 50px;
-    margin-top: 32px;
+.submit-btn {
+  min-width: 224px;
+  height: 50px;
+  margin-top: 32px;
 }
 
-
 /* TODO images */
-.container-item-picture{
-    width: 100%;
-    min-height: 300px;
+.container-item-picture {
+  width: 100%;
+  min-height: 300px;
 }
 
 @media screen and (min-width: 768px) {
+  .newsletter {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 
-    .newsletter{
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
+  .newsletter .container {
+    gap: 64px;
+  }
 
-    .newsletter .container{
-        gap: 64px;
-    }
+  .section-title {
+    text-align: left;
+    margin-bottom: 30px;
+  }
 
-    .section-title{
-        text-align: left;
-        margin-bottom: 30px;
-    }
+  .newsletter-text {
+    font-size: 18px;
+    line-height: 1.7;
+  }
 
-    .newsletter-text{
-        font-size: 18px;
-        line-height: 1.7;
-    }
+  .form {
+    margin-top: 20px;
+  }
 
-    .form{
-        margin-top: 20px;
-    }
+  /* .form-input,
+  .checkbox-container label {
+    font-size: 18px;
+  } */
 
-    .form-input,
-    .checkbox-container label{
-        font-size: 18px;
-    }
+  .form-input {
+    font-size: 18px;
+  }
 
-    .submit-btn{
-        font-size: 18px;
-        margin-top: 30px;
-    }
+  .submit-btn {
+    font-size: 18px;
+    margin-top: 30px;
+  }
 
-    .container-item-content{
-        max-width: 536px;
-    }
+  .container-item-content {
+    max-width: 536px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
+  .newsletter {
+    padding-bottom: 86px;
+  }
 
-    .newsletter{
-        padding-bottom: 86px;
-    }
+  .newsletter .container {
+    max-width: 1128px;
+    flex-wrap: nowrap;
+    gap: 100px;
+  }
 
-    .newsletter .container{
-        max-width: 1128px;
-        flex-wrap: nowrap;
-        gap: 100px;
-    }
+  .section-title {
+    margin-bottom: 31px;
+  }
 
-    .section-title{
-        margin-bottom: 31px;
-    }
+  .container-item-picture {
+    width: 460px;
+  }
 
-    .container-item-picture{
-        width: 460px;
-    }
+  .form {
+    margin-top: 21px;
+  }
 
-    .form{
-        margin-top: 21px;
-    }
+  .form-input {
+    height: 52px;
+  }
 
-    .form-input{
-        height: 52px;
-    }
-
-    .submit-btn{
-        height: 52px;
-        margin-top: 31px;
-    }
+  .submit-btn {
+    height: 52px;
+    margin-top: 31px;
+  }
 }
