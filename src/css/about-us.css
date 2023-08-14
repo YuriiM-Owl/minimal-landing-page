@@ -1,26 +1,15 @@
 .about-us {
   padding-bottom: 64px;
-  background-color: var(--color-alt-bg);
 }
 
 .about-us-text {
   padding: 64px 0 64px 0;
-}
-
-.section-subtitle {
+  background-color: var(--color-alt-bg);
 }
 
 .section-title {
-  padding: 30px 0;
+  margin: 30px 0;
 }
-
-/* .text {
-  font-weight: 400;
-} */
-
-/* .about-us-text .text {
-  padding-bottom: 30px;
-} */
 
 .gap {
   margin-bottom: 30px;
@@ -60,7 +49,6 @@
 .about-us-img {
   width: 100%;
   height: 100%;
-  background-color: transparent;
 }
 
 @media screen and (min-width: 375px) {
@@ -79,16 +67,12 @@
   }
 
   .text-list {
-    /* display: flex; */
     flex-direction: row;
-    /* gap: 33px; */
     justify-content: space-between;
     width: 100%;
   }
 
   .box-text {
-    /* display: flex;
-    flex-direction: column; */
     gap: 14px;
   }
 }
@@ -97,12 +81,7 @@
   .about-us .container {
     display: flex;
     gap: 24px;
-    /* padding: 0 60px; */
   }
-
-  /* .text {
-    font-size: 18px;
-  } */
 
   .about-us-text {
     padding: 36px 69px 37px 69px;
@@ -111,20 +90,11 @@
   }
 
   .container-about-us-text {
-    /* padding: 21px 0 21px 0; */
     display: flex;
     align-items: center;
   }
 
   .box-text {
     gap: 20px;
-  }
-
-  .text-accent {
-    padding: 0;
-  }
-
-  .text-list {
-    gap: 0;
   }
 }
