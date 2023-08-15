@@ -10,7 +10,7 @@
   align-items: flex-end;
 }
 
-.section-title {
+.newsletter .section-title {
   text-align: center;
   margin-bottom: 20px;
 }
@@ -151,7 +151,7 @@
     gap: 64px;
   }
 
-  .section-title {
+  .newsletter .section-title {
     text-align: left;
     margin-bottom: 30px;
   }
@@ -195,7 +195,7 @@
     gap: 100px;
   }
 
-  .section-title {
+  .newsletter .section-title {
     margin-bottom: 31px;
   }
 
