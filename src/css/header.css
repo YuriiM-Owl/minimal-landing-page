@@ -3,7 +3,6 @@
     width: 100%;
     top: 0;
     left: 0;
-    /* z-index: 10; */
 
 }
 
@@ -26,10 +25,10 @@
     align-items: center;
     padding-top: 28px;
     padding-bottom: 28px;
-    /* z-index: 4; */
 }
 
 .logo-header{
+    display: flex;
     z-index: 4;
 }
 
@@ -47,15 +46,28 @@
     z-index: 4;
 }
 
+.burger-wrapper{
+    display: block;
+    width: 24px;
+    height: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    
+   
+}
+
+
 .burger-line{
     display: block;
     position: absolute;
     background-color: var(--color-primary);
     width: 100%;
-    height: 3px;
+    height: 2px;
     border-radius: 2px;
     left: 0;
-    transition: .3s all linear;
+    transition: var(--trn-main-transition-params);
 } 
 
  .first-line{ 
@@ -63,34 +75,93 @@
  } 
 
 .second-line{
-    top: 25%;
+    top: 30%;
 }
 
 .third-line{
-    top: 50%;
+    bottom: 30%;
 }
 
 .fourth-line{
-    top: 75%;
+    bottom: 0;
+}  
+
+
+
+
+
+
+.burger-active .first-line{
+    top: -50%;
+    opacity: 0;
+   
+}
+
+
+
+.burger-active .fourth-line{
+    opacity: 0;
+    bottom: -50%;
+
+}
+
+
+.burger-active .second-line{
+    /* animation: var(--trn-main-transition-params) second forwards; */
+    top: 44%;
+        transform: rotate(45deg);
+    
+}
+
+
+.burger-active .third-line{
+    /* animation: var(--trn-main-transition-params) third forwards; */
+    bottom: 44%;
+        transform: rotate(135deg);
 } 
 
 
-.burger-active .first-line,
-.burger-active .fourth-line{
-    opacity: 0;
+
+
+/* @keyframes second{
+    0% {
+            top: 0;
+            transform: rotate(0);
+        }
+    
+        50% {
+            top: 44%;
+            transform: rotate(0);
+        } 
+    
+        100% {
+            top: 44%;
+             transform: rotate(45deg);
+        } 
 }
 
-.burger-active .second-line{
-    transform: rotate(45deg);
+
+
+
+@keyframes third{
+    0% {
+            bottom: 0;
+            transform: rotate(0);
+        }
+    
+        50% {
+            bottom: 44%;
+            transform: rotate(0);
+        } 
+    
+        100% {
+            bottom: 44%;
+             transform: rotate(135deg); 
 }
- .burger-active .third-line{
-    transform: rotate(-45deg);
- }
-
-
-/* .menu-close-btn{
-    z-index: 6;
 } */
+
+
+
 
 .mob-menu{
     position: fixed;
@@ -128,6 +199,16 @@
         width: 40px;
         height: 40px;
     }
+
+    .burger-wrapper{
+        width: 30px;
+        height: 24px;
+    }
+
+    .burger-line{
+        height: 3px;
+    }
+
 
 }
 
