@@ -115,7 +115,7 @@
 }
 
 .form-checkbox:focus + label .checkbox-border,
-.checkbox-border:hover {
+.subscription-checkbox-label:hover .checkbox-border {
   border-color: var(--color-primary);
 }
 
