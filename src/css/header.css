@@ -1,8 +1,9 @@
 .header{
     position: relative;
+    /* position: fixed;
     width: 100%;
     top: 0;
-    left: 0;
+    left: 0; */
     height: 88px;
     display: flex;
     align-items: center;
@@ -121,7 +122,6 @@
         left: -100%;
         width: 100vw;
         height: 100vh;
-        padding: 32px;
         background-color: var(--color-main-bg);
         z-index: 12;
         overflow-y: auto;
@@ -134,7 +134,7 @@
 }
 
 .nav-mob-menu{
-    padding-top: 114px;
+    padding-top: 202px;
 }
 
 .mob-menu-list{
@@ -160,6 +160,10 @@
         height: 40px;
     }
 
+    .mob-menu-list{
+        gap: 30px;
+    }
+
     .burger-wrapper{
         width: 30px;
         height: 24px;
@@ -178,7 +182,7 @@
     }
 
     .nav-mob-menu {
-            padding-top: 150px;
+            padding-top: 245px;
     }
 
 }
@@ -194,11 +198,12 @@
         gap: 30px;
     }
 
-    .nav-list-item{
+    .nav-link{
         transition: text-decoration var(--trn-main-transition-params);
     }
 
-    .nav-list-item:hover{
+    .nav-link:hover,
+    .nav-link:focus{
         text-decoration: underline;
     }
 
