@@ -1,6 +1,6 @@
-.about-us {
+/* .about-us {
   padding-bottom: 64px;
-}
+} */
 
 .about-us-text {
   padding: 64px 0 64px 0;
@@ -55,10 +55,10 @@
 }
 
 @media screen and (min-width: 768px) {
-  .about-us {
+  /* .about-us {
     padding-bottom: 64px;
     background-color: transparent;
-  }
+  } */
 
   .about-us-text {
     background-color: var(--color-alt-bg);
