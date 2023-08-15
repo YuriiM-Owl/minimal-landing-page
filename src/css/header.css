@@ -1,9 +1,11 @@
 .header{
-    position: fixed;
+    position: relative;
     width: 100%;
     top: 0;
     left: 0;
-
+    height: 88px;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -15,7 +17,7 @@
     width: 100%;
     height: 100%;
     background-color: var(--color-alt-bg);
-    z-index: 4;
+    z-index: 14;
 }
 
 .header .container{
@@ -23,13 +25,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 28px;
-    padding-bottom: 28px;
 }
 
 .logo-header{
     display: flex;
-    z-index: 4;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 14;
 }
 
 .nav-list{
@@ -43,7 +45,7 @@
     background-color: transparent;
     cursor: pointer;
     position: relative;
-    z-index: 4;
+    z-index: 14;
 }
 
 .burger-wrapper{
@@ -58,7 +60,6 @@
    
 }
 
-
 .burger-line{
     display: block;
     position: absolute;
@@ -67,7 +68,10 @@
     height: 2px;
     border-radius: 2px;
     left: 0;
-    transition: var(--trn-main-transition-params);
+    transition: transform var(--trn-main-transition-params),
+    top var(--trn-main-transition-params),
+    bottom var(--trn-main-transition-params),
+    opacity var(--trn-main-transition-params);
 } 
 
  .first-line{ 
@@ -86,18 +90,11 @@
     bottom: 0;
 }  
 
-
-
-
-
-
 .burger-active .first-line{
     top: -50%;
     opacity: 0;
    
 }
-
-
 
 .burger-active .fourth-line{
     opacity: 0;
@@ -107,78 +104,37 @@
 
 
 .burger-active .second-line{
-    /* animation: var(--trn-main-transition-params) second forwards; */
-    top: 44%;
-        transform: rotate(45deg);
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
     
 }
-
 
 .burger-active .third-line{
-    /* animation: var(--trn-main-transition-params) third forwards; */
-    bottom: 44%;
-        transform: rotate(135deg);
+    bottom: 50%;
+    transform: translateY(50%) rotate(135deg);
 } 
-
-
-
-
-/* @keyframes second{
-    0% {
-            top: 0;
-            transform: rotate(0);
-        }
-    
-        50% {
-            top: 44%;
-            transform: rotate(0);
-        } 
-    
-        100% {
-            top: 44%;
-             transform: rotate(45deg);
-        } 
-}
-
-
-
-
-@keyframes third{
-    0% {
-            bottom: 0;
-            transform: rotate(0);
-        }
-    
-        50% {
-            bottom: 44%;
-            transform: rotate(0);
-        } 
-    
-        100% {
-            bottom: 44%;
-             transform: rotate(135deg); 
-}
-} */
-
-
 
 
 .mob-menu{
     position: fixed;
         top: 0;
-        left: 0;
+        left: -100%;
         width: 100vw;
         height: 100vh;
         padding: 32px;
         background-color: var(--color-main-bg);
-        z-index: 2;
+        z-index: 12;
+        overflow-y: auto;
+        transition: left var(--trn-main-transition-params);
 
-        transform: translateX(-100%);
-            transition: transform 250ms ease-in-out;
 }
 
 .mob-menu.is-open{
-    transform: translateX(0);
+    left: 0;
+}
+
+.nav-mob-menu{
+    padding-top: 114px;
 }
 
 .mob-menu-list{
@@ -187,7 +143,6 @@
     justify-content: center;
     align-items: center;
     gap: 17px;
-    margin-top: 144px;
 }
 
 .mob-menu-item{
@@ -195,6 +150,11 @@
 }
 
 @media screen and (min-width: 768px) {
+
+    .header{
+        height: 95px;
+    }
+
     .menu-open-btn{
         width: 40px;
         height: 40px;
@@ -209,36 +169,44 @@
         height: 3px;
     }
 
+    .second-line {
+            top: 32%;
+    }
+
+    .third-line {
+            bottom: 28%;
+    }
+
+    .nav-mob-menu {
+            padding-top: 150px;
+    }
 
 }
 
 @media screen and (min-width: 1440px) {
     .header .container{
-        padding: 26px 0;
-        background-color: var(--color-alt-bg);
         display: flex;
-        z-index: 5;
-        
+        z-index: 15;
+}
 
-    }
-
-    .logo-header{
-        /* margin-right: 572px; */
-    }
-
-   
-
-    .nav-list{
+   .nav-list{
         display: flex;
         gap: 30px;
-       
+    }
+
+    .nav-list-item{
+        transition: text-decoration var(--trn-main-transition-params);
+    }
+
+    .nav-list-item:hover{
+        text-decoration: underline;
     }
 
     .burger{
         display: none;
     }
 
-    .mob-menu-list{
+    .mob-menu{
         display: none;
     }
 }
