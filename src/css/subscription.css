@@ -10,7 +10,7 @@
   align-items: flex-end;
 }
 
-.section-title {
+.newsletter .section-title {
   text-align: center;
   margin-bottom: 20px;
 }
@@ -111,16 +111,17 @@
 }
 
 .checkbox-icon {
-  fill: transparent;
+  opacity: 0;
 }
 
-.form-checkbox:focus + label .checkbox-border {
+.form-checkbox:focus + label .checkbox-border,
+.subscription-checkbox-label:hover .checkbox-border {
   border-color: var(--color-primary);
 }
 
 /* TODO checkbox is checked */
 .form-checkbox:checked + label .checkbox-icon {
-  fill: var(--color-main-bg);
+  opacity: 1;
 }
 
 .form-checkbox:checked + label .checkbox-border {
@@ -151,7 +152,7 @@
     gap: 64px;
   }
 
-  .section-title {
+  .newsletter .section-title {
     text-align: left;
     margin-bottom: 30px;
   }
@@ -195,7 +196,7 @@
     gap: 100px;
   }
 
-  .section-title {
+  .newsletter .section-title {
     margin-bottom: 31px;
   }
 
