@@ -100,7 +100,7 @@
 
 .burger-active .second-line {
   top: 50%;
-  transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(225deg);
 }
 
 .burger-active .third-line {
@@ -125,7 +125,8 @@
 }
 
 .nav-mob-menu {
-  padding-top: 202px;
+  padding: 202px 32px 32px;
+  overflow-y: auto;
 }
 
 .mob-menu-list {

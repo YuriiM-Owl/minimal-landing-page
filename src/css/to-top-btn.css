@@ -1,0 +1,41 @@
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 32px;
+  right: 16px;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  /* border: 1px solid rgba(10, 33, 74, 0.7); */
+  border: none;
+  border-radius: 50%;
+  /* background-color: var(--color-primary); */
+  background-color: rgba(10, 33, 74, 0.6);
+
+  box-shadow: -2px -2px 2px 1px rgba(122, 122, 122, 0.3),
+    1px 2px 1px 2px rgba(10, 33, 74, 0.4);
+
+  color: var(--color-alt-text);
+
+  transition: background-color var(--trn-main-transition-params);
+}
+
+.scroll-to-top-btn:is(:hover, :focus) {
+  /* background-color: rgba(10, 33, 74, 0.8); */
+  background-color: var(--color-primary);
+}
+
+@media screen and (min-width: 768px) {
+  .scroll-to-top-btn {
+    bottom: 40px;
+    right: 20px;
+    width: 52px;
+    height: 52px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .scroll-to-top-btn {
+    bottom: 72px;
+    right: 36px;
+  }
+}
