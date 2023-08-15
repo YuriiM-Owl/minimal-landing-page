@@ -1,9 +1,12 @@
 .clients-reviews {
   background-color: var(--color-alt-bg);
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 .section-title.clients-reviews-title {
   text-align: center;
+  margin-bottom: 30px;
 }
 .clients-reviews-wrap {
   display: flex;
@@ -11,7 +14,7 @@
 }
 .clients-reviews-item {
   padding: 24px;
-  width: 343px;
+  width: 100%;
   background-color: var(--color-main-bg);
   border-radius: 8px;
 }
@@ -88,5 +91,10 @@
 
   .clients-reviews-item {
     padding: 32px;
+  }
+
+  .clients-reviews {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
