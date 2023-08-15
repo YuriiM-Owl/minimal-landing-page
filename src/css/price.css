@@ -12,6 +12,7 @@
     align-items: center;
     border-bottom: 1px solid var(--color-primary);
     padding: 30px 0;
+    max-width: 100%;
 }
 
 .price-item:first-child {
@@ -43,7 +44,7 @@
     opacity: 0;
     left: -50%;
     top: 50%;
-    transform: translateY(50%);
+    transform: translateY(-50%);
     transition: opacity var(--trn-main-transition-params), left var(--trn-main-transition-params);
 }
 
