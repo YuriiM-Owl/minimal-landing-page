@@ -114,7 +114,8 @@
   opacity: 0;
 }
 
-.form-checkbox:focus + label .checkbox-border {
+.form-checkbox:focus + label .checkbox-border,
+.checkbox-border:hover {
   border-color: var(--color-primary);
 }
 
