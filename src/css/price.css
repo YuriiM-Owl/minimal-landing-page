@@ -1,76 +1,79 @@
 .price {
-    padding: 64px 0;
+  /* padding: 64px 0; */
+  padding-top: 64px;
 }
 
 .price-list {
-    width: 100%;
+  width: 100%;
 }
 
 .price-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid var(--color-primary);
-    padding: 30px 0;
-    max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-primary);
+  padding: 30px 0;
+  max-width: 100%;
 }
 
 .price-item:first-child {
-    border-top: 1px solid var(--color-primary);
+  border-top: 1px solid var(--color-primary);
 }
 
 /* //TODO rewrite later correct address*/
 
 .price-item > .text {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .price-title {
-    position: relative;
-    transition: padding var(--trn-main-transition-params);
+  position: relative;
+  transition: padding var(--trn-main-transition-params);
 }
 
 .price-item:hover .price-title {
-    padding-left: 60px;
+  padding-left: 60px;
 }
 
 .price-title::before {
-    position: absolute;
-    content: "";
-    width: 40px;
-    height: 3px;
-    border-radius: 3px;
-    background-color: var(--color-primary);
-    opacity: 0;
-    left: -50%;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: opacity var(--trn-main-transition-params), left var(--trn-main-transition-params);
+  position: absolute;
+  content: '';
+  width: 40px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: var(--color-primary);
+  opacity: 0;
+  left: -50%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: opacity var(--trn-main-transition-params),
+    left var(--trn-main-transition-params);
 }
 
 .price-item:hover .price-title::before {
-    opacity: 1;
-    left: 0;
+  opacity: 1;
+  left: 0;
 }
 
 @media screen and (min-width: 375px) {
-    .price-item:hover .price-title {
-        padding-left: 80px;
-    }
+  .price-item:hover .price-title {
+    padding-left: 80px;
+  }
 
-    .price-title::before {
-        width: 50px;
-    }
+  .price-title::before {
+    width: 50px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .price {
-        padding: 100px 0;
-    }
+  .price {
+    /* padding: 100px 0; */
+    padding-top: 100px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-    .price > .container {
-        max-width: 1128px;
-    }
+  .price > .container {
+    max-width: 1128px;
   }
+}
