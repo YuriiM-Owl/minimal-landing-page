@@ -1,0 +1,105 @@
+.hero {
+  padding: 140px 0 313px;
+}
+.hero .main-title {
+  max-width: 285px;
+  margin-bottom: 14px;
+}
+.hero-content-text {
+  margin-bottom: 28px;
+}
+.subscribe-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+}
+@media screen and (max-width: 374px) {
+  .hero .main-title {
+  }
+
+  .hero-content-text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    background-image: url(../images/hero-bg-main-mobile-wide-1x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../images/hero-bg-main-mobile-wide-2x.jpg);
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 64px 0 100px;
+    background: var(--color-main-bg, --color-alt-bg);
+  }
+
+  .hero .container {
+    background-image: url(../images/hero-bg-secondary-1-tablet-1x.jpg),
+      url(../images/hero-bg-main-tablet-1x.jpg);
+    background-position: top 202px left 16px, top 0 right 16px;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero .container {
+      background-image: url(../images/hero-bg-secondary-1-tablet-2x.jpg),
+        url(../images/hero-bg-main-tablet-2x.jpg);
+      background-size: 308px 329px, 364px 531px;
+    }
+  }
+
+  .hero .main-title {
+    max-width: 648px;
+    margin-bottom: 410px;
+    margin-right: auto;
+  }
+  .hero-content-wrapper {
+    margin-right: auto;
+    max-width: 312px;
+  }
+  .hero-content-text {
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero .container {
+    background-image: url(../images/hero-bg-secondary-1-desktop-1x.jpg),
+      url(../images/hero-bg-main-desktop-1x.jpg),
+      url(../images/hero-bg-secondary-2-desktop-1x.jpg);
+    background-position: top 201px left 16px, left 351px top 0, top 0 right 16px;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero .container {
+      background-image: url(../images/hero-bg-secondary-1-desktop-2x.jpg),
+        url(../images/hero-bg-main-desktop-2x.jpg),
+        url(../images/hero-bg-secondary-2-desktop-2x.jpg);
+      background-size: 310px 329px, 648px 530px, 312px 337px;
+    }
+  }
+
+  .hero .main-title {
+    margin-bottom: 246px;
+  }
+  .hero-content-wrapper {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
