@@ -111,7 +111,7 @@
 }
 
 .checkbox-icon {
-  fill: transparent;
+  opacity: 0;
 }
 
 .form-checkbox:focus + label .checkbox-border {
@@ -120,7 +120,7 @@
 
 /* TODO checkbox is checked */
 .form-checkbox:checked + label .checkbox-icon {
-  fill: var(--color-main-bg);
+  opacity: 1;
 }
 
 .form-checkbox:checked + label .checkbox-border {
