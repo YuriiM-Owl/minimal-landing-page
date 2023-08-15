@@ -10,6 +10,7 @@
 }
 
 @media screen and (max-width: 767px) {
+  .main-item-wrapper,
   .bestsellers-item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -18,7 +19,6 @@
   margin-bottom: 14px;
 }
 .bestsellers-card-title {
-  font-size: 16px;
   margin-bottom: 10px;
 }
 .bestsellers-price {
@@ -46,6 +46,11 @@
     gap: 32px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1399px) {
+  .main-item-wrapper {
+    margin-bottom: 32px;
+  }
+}
 @media screen and (min-width: 1440px) {
   .bestsellers-section .container {
     max-width: 1128px;
@@ -53,39 +58,25 @@
   .bestsellers-section .section-title {
     margin-bottom: 30px;
   }
+  .flex-container {
+    display: flex;
+    gap: 24px;
+  }
+  .main-item-wrapper,
+  .bestsellers-list {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
   .bestsellers-list {
     display: flex;
-    flex-direction: column;
-    max-height: 580px;
-
-    row-gap: 0;
-    column-gap: 0;
+    column-gap: 20px;
+    row-gap: 30px;
+  }
+  .bestsellers-img-wrapper {
+    margin-bottom: 10px;
   }
 
   .bestsellers-item {
-    margin: 0;
-  }
-  .bestsellers-item:first-child {
-    margin-right: 24px;
-  }
-
-  .bestsellers-item:nth-child(2),
-  .bestsellers-item:nth-child(3) {
-    margin-bottom: 30px;
-  }
-  .bestsellers-item:nth-child(2),
-  .bestsellers-item:nth-child(4) {
-    margin-right: 20px;
-  }
-  .bestsellers-item:nth-child(1),
-  .bestsellers-item:nth-child(2) {
-    order: 0;
-  }
-  .bestsellers-item:nth-child(4) {
-    order: 1;
-  }
-  .bestsellers-item:nth-child(3),
-  .bestsellers-item:nth-child(5) {
-    order: 2;
+    flex-basis: calc((100% - 20px) / 2);
   }
 }
