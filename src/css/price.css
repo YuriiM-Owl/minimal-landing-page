@@ -2,16 +2,11 @@
     padding: 64px 0;
 }
 
-/* .price-conteiner {
-    display: flex;
-    max-width: 100%;
-} */
-
 .price-list {
-    width: 343px;
+    width: 100%;
 }
 
-.price-iteam {
+.price-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,67 +15,66 @@
     padding: 30px 0;
 }
 
-.price-iteam:first-child {
+.price-item:first-child {
     border-top: 1px solid var(--color-primary);
 }
 
 /* //TODO rewrite later correct address*/
 
-.price > .text {
+.price-item > .text {
     font-size: 16px;
     font-weight: 700;
 }
 
 .price-title {
     position: relative;
+    transition: padding var(--trn-main-transition-params);
 }
 
 .price-title:hover {
     position: relative;
-    padding-left: 80px;
-    transition: ease-in-out 0.5s;
-    transition-delay: 0.5s;
+    padding-left: 60px;
 }
 
 .price-title::before {
     position: absolute;
     content: "";
-    width: 50px;
-    height: 4px;
+    width: 40px;
+    height: 3px;
     border-radius: 3px;
     background-color: var(--color-primary);
     opacity: 0;
-    transform: translate(20px, 20px);
-    transition: opacity ease-in-out 0.002s;
+    left: -50%;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: opacity 200ms ease-in-out;
     transition-delay: 0;
+    transition: opacity var(--trn-main-transition-params), left var(--trn-main-transition-params);
 }
 
 .price-title:hover::before {
     opacity: 1;
-    transform: translate(-70px, 20px);
-    transition-delay: 900ms;
+    left: 0;
+}
+
+@media screen and (min-width: 375px) {
+    .price-title:hover {
+        padding-left: 80px;
+    }
+
+    .price-title::before {
+        width: 50px;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .price {
         padding: 100px 0;
     }
-
-    .price > .conteiner {
-        padding: 0 32px;
-    }
-
-    .price-list {
-        width: 704px;
-    }
 }
 
 @media screen and (min-width: 1440px) {
-    .price > .conteiner {
-        padding: 0 172px;
-    }
-
-    .price-list {
-        width: 1096px;
+    .price > .container {
+        max-width: 1128px;
     }
   }
