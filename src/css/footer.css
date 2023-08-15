@@ -193,8 +193,8 @@
   }
   .footer-wrap {
     position: relative;
-    padding-left: 16px;
-    padding-right: 16px;
+    /*     padding-left: 16px;
+    padding-right: 16px; */
   }
 
   .email {
@@ -204,6 +204,7 @@
   .footer-terms {
     font-size: 16px;
     line-height: 1.25;
+    letter-spacing: 0.074em;
   }
 }
 
@@ -233,8 +234,8 @@
   }
 
   .footer-wrap {
-    padding-left: 16px;
-    padding-right: 16px;
+    /*     padding-left: 16px;
+    padding-right: 16px; */
     position: static;
     justify-content: start;
   }
