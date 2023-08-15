@@ -10,7 +10,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 100%;
     border-bottom: 1px solid var(--color-primary);
     padding: 30px 0;
 }
@@ -22,21 +21,19 @@
 /* //TODO rewrite later correct address*/
 
 .price-item > .text {
-    font-size: 16px;
     font-weight: 700;
 }
 
 .price-title {
-    position: relative;
     transition: padding var(--trn-main-transition-params);
 }
 
-.price-title:hover {
+.price-item:hover {
     position: relative;
     padding-left: 60px;
 }
 
-.price-title::before {
+.price-item::before {
     position: absolute;
     content: "";
     width: 40px;
@@ -47,18 +44,16 @@
     left: -50%;
     top: 50%;
     transform: translateY(-50%);
-    transition: opacity 200ms ease-in-out;
-    transition-delay: 0;
     transition: opacity var(--trn-main-transition-params), left var(--trn-main-transition-params);
 }
 
-.price-title:hover::before {
+.price-item:hover::before {
     opacity: 1;
     left: 0;
 }
 
 @media screen and (min-width: 375px) {
-    .price-title:hover {
+    .price-item:hover {
         padding-left: 80px;
     }
 
