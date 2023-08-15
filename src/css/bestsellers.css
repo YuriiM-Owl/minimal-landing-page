@@ -5,8 +5,10 @@
 .bestsellers-section {
   padding: 64px 0;
 }
-.bestsellers-item-display-none {
-  display: none;
+@media screen and (max-width: 767px) {
+  .bestsellers-item-display-none {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -30,9 +32,10 @@
   .bestsellers-section {
     padding: 100px 0;
   }
-  .bestsellers-item-display-none {
-    display: block;
+  .bestsellers-section .section-title {
+    margin-bottom: 30px;
   }
+
   .bestsellers-card-title,
   .bestsellers-price {
     font-size: inherit;
@@ -73,9 +76,12 @@
     row-gap: 30px;
   }
   .bestsellers-img-wrapper {
-    margin-bottom: 10px;
+    margin-bottom: 14px;
   }
-
+  .flex-container .text,
+  .flex-container .local-title-alt {
+    line-height: 1.36;
+  }
   .bestsellers-item {
     flex-basis: calc((100% - 20px) / 2);
   }
