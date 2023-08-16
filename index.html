@@ -15,8 +15,8 @@
     />
     <!-- Custom styles -->
     
-    <script type="module" crossorigin src="/minimal-landing-page/assets/index-0e508420.js"></script>
-    <link rel="stylesheet" href="/minimal-landing-page/assets/index-07191d16.css">
+    <script type="module" crossorigin src="/minimal-landing-page/assets/index-2781e038.js"></script>
+    <link rel="stylesheet" href="/minimal-landing-page/assets/index-dbff81a5.css">
   </head>
   <body>
     <header class="header">
@@ -29,22 +29,32 @@
     <nav class="nav-menu">
       <ul class="nav-list">
         <li class="nav-list-item">
-          <a href="#about-us-section" class="nav-link text">About us</a>
+          <a href="#about-us-section" class="nav-link text anchor-link"
+            >About us</a
+          >
         </li>
         <li class="nav-list-item">
-          <a href="#our-products-section" class="nav-link text">Our products</a>
+          <a href="#our-products-section" class="nav-link text anchor-link"
+            >Our products</a
+          >
         </li>
         <li class="nav-list-item">
-          <a href="#price-section" class="nav-link text">Prices</a>
+          <a href="#price-section" class="nav-link text anchor-link">Prices</a>
         </li>
         <li class="nav-list-item">
-          <a href="#bestsellers-section" class="nav-link text">Bestsellers</a>
+          <a href="#bestsellers-section" class="nav-link text anchor-link"
+            >Bestsellers</a
+          >
         </li>
         <li class="nav-list-item">
-          <a href="#clients-reviews-section" class="nav-link text">Reviews</a>
+          <a href="#clients-reviews-section" class="nav-link text anchor-link"
+            >Reviews</a
+          >
         </li>
         <li class="nav-list-item">
-          <a href="#" class="nav-link text">Contacts</a>
+          <a href="#footer-section" class="nav-link text anchor-link"
+            >Contacts</a
+          >
         </li>
       </ul>
     </nav>
@@ -67,22 +77,38 @@
       <nav class="nav-mob-menu">
         <ul class="mob-menu-list">
           <li class="mob-menu-item">
-            <a class="mob-nav-link text" href="#">About us</a>
+            <a class="mob-nav-link text anchor-link" href="#about-us-section"
+              >About us</a
+            >
           </li>
           <li class="mob-menu-item">
-            <a class="mob-nav-link text" href="#">Our products</a>
+            <a
+              class="mob-nav-link text anchor-link"
+              href="#our-products-section"
+              >Our products</a
+            >
           </li>
           <li class="mob-menu-item">
-            <a class="mob-nav-link text" href="#">Prices</a>
+            <a class="mob-nav-link text anchor-link" href="#price-section"
+              >Prices</a
+            >
           </li>
           <li class="mob-menu-item">
-            <a class="mob-nav-link text" href="#">Bestsellers</a>
+            <a class="mob-nav-link text anchor-link" href="#bestsellers-section"
+              >Bestsellers</a
+            >
           </li>
           <li class="mob-menu-item">
-            <a class="mob-nav-link text" href="#">Reviews</a>
+            <a
+              class="mob-nav-link text anchor-link"
+              href="#clients-reviews-section"
+              >Reviews</a
+            >
           </li>
           <li class="mob-menu-item">
-            <a class="mob-nav-link text" href="#">Contacts</a>
+            <a class="mob-nav-link text anchor-link" href="#footer-section"
+              >Contacts</a
+            >
           </li>
         </ul>
       </nav>
@@ -105,7 +131,7 @@
 </section>
 
 
-      <section class="about-us" id="about-us-section">
+      <section class="about-us goto-anchor" id="about-us-section">
   <div class="container">
     <div class="container-about-us-text">
       <div class="about-us-text">
@@ -183,7 +209,7 @@
 </section>
 
 
-      <section class="price" id="price-section">
+      <section class="price goto-anchor" id="price-section">
   <div class="container">
     <h2 class="visually-hidden">Chairs Tables Dresses Sofas Price</h2>
     <ul class="price-list">
@@ -208,7 +234,7 @@
 </section>
 
 
-      <section class="our-products" id="our-products-section">
+      <section class="our-products goto-anchor" id="our-products-section">
   <div class="container">
     <h2 class="section-title our-products-title">OUR PRODUCTS</h2>
     <ul class="our-products-image-wrap">
@@ -281,7 +307,7 @@
 </section>
 
 
-      <section class="bestsellers-section" id="bestsellers-section">
+      <section class="bestsellers-section goto-anchor" id="bestsellers-section">
   <div class="container">
     <h2 class="section-title">bestsellers</h2>
 
@@ -445,7 +471,7 @@
 </section>
 
 
-      <section class="clients-reviews" id="clients-reviews-section">
+      <section class="clients-reviews goto-anchor" id="clients-reviews-section">
   <div class="container">
     <h2 class="section-title clients-reviews-title">Clients reviews</h2>
     <ul class="clients-reviews-wrap">
@@ -521,7 +547,7 @@
 </section>
 
 
-      <section class="newsletter" id="subscription-section">
+      <section class="newsletter goto-anchor" id="subscription-section">
   <div class="container">
     <div class="container-item-content">
       <h2 class="section-title">Newsletter</h2>
@@ -708,8 +734,16 @@
 </footer>
 
 
-    <!-- !----------- JS ------------->
+    <button type="button" class="scroll-to-top-btn">A</button>
 
+
+    <!-- !----------- JS ------------->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     
   </body>
 </html>
