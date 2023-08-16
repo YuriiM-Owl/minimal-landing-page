@@ -10,6 +10,7 @@
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
+    document.body.classList.toggle('scroll-lock');
 
     const scrollLockMethod = !isMenuOpen
       ? 'disableBodyScroll'
@@ -27,6 +28,7 @@
     openMenuBtn.classList.remove('burger-active');
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
+    document.body.classList.remove('scroll-lock');
   });
 
   // ! Close the mobile menu with click on anchor link
@@ -36,6 +38,7 @@
       mobileMenu.classList.remove('is-open');
       openMenuBtn.classList.remove('burger-active');
       bodyScrollLock.enableBodyScroll(document.body);
+      document.body.classList.remove('scroll-lock');
     });
   }
 })();
