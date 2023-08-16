@@ -13,15 +13,26 @@
   align-items: center;
   justify-content: center;
   height: 48px;
-  min-width: 224px;
 }
+
 @media screen and (max-width: 374px) {
   .hero .main-title {
   }
 
+  /* .subscribe-btn {
+    padding-left: 30px;
+    padding-right: 30px;
+  } */
+
   .hero-content-text {
     font-size: 14px;
   }
+}
+
+@media screen and (min-width: 375px) {
+  /* .subscribe-btn {
+    min-width: 224px;
+  } */
 }
 
 @media screen and (max-width: 767px) {
